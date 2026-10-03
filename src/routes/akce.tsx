@@ -54,10 +54,27 @@ function Events() {
                 id={event.slug}
                 className="grid scroll-mt-28 gap-0 overflow-hidden rounded-2xl bg-card shadow-(--shadow-card) md:grid-cols-[18rem_1fr]"
               >
-                <Placeholder
-                  label={event.posterAlt}
-                  className="min-h-56 rounded-none border-0 border-b-2 md:border-b-0 md:border-r-2"
-                />
+                {event.posterUrl ? (
+                  <a
+                    href={event.posterUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block bg-muted"
+                    aria-label={`${event.posterAlt} – otevřít ve větší velikosti`}
+                  >
+                    <img
+                      src={event.posterUrl}
+                      alt={event.posterAlt}
+                      loading="lazy"
+                      className="h-auto w-full"
+                    />
+                  </a>
+                ) : (
+                  <Placeholder
+                    label={event.posterAlt}
+                    className="min-h-56 rounded-none border-0 border-b-2 md:border-b-0 md:border-r-2"
+                  />
+                )}
                 <div className="p-7 md:p-9">
                   <h3 className="text-2xl font-bold text-primary">{event.title}</h3>
                   <p className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-base font-semibold text-muted-foreground">

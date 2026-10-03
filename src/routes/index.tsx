@@ -2,9 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Users, HandHeart, Trees, Megaphone, ArrowRight, CalendarDays } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SITE, upcomingEvents } from "@/data/site";
-import heroAsset from "@/assets/uvodni-fotografie.jpg.asset.json";
-import schoolPosterAsset from "@/assets/prohlidka-skoly.png.asset.json";
-import sumavaPosterAsset from "@/assets/dostupna-sumava.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -51,17 +48,6 @@ const AREAS = [
   },
 ];
 
-const POSTERS: Record<string, { src: string; alt: string }> = {
-  "den-otevrenych-dveri-zs-plasy": {
-    src: schoolPosterAsset.url,
-    alt: "Plakát prohlídky nových prostor Základní školy Plasy",
-  },
-  "dostupna-sumava": {
-    src: sumavaPosterAsset.url,
-    alt: "Plakát zájezdu Dostupná Šumava",
-  },
-};
-
 function Index() {
   const next = upcomingEvents().slice(0, 2);
 
@@ -90,7 +76,7 @@ function Index() {
           </div>
           <div className="relative order-first md:order-none">
             <div aria-hidden className="absolute -bottom-4 -left-4 h-full w-full rounded-lg bg-ochre" />
-            <img src={heroAsset.url} alt="Senioři společně hledí na klášter v Plasích" className="relative aspect-4/3 w-full rounded-lg object-cover shadow-(--shadow-lift)" />
+            <img src="/images/uvodni-fotografie.jpg" alt="Senioři společně hledí na klášter v Plasích" className="relative aspect-4/3 w-full rounded-lg object-cover shadow-(--shadow-lift)" />
           </div>
         </div>
       </section>
@@ -140,7 +126,7 @@ function Index() {
                 className="grid overflow-hidden rounded-lg bg-card text-card-foreground shadow-(--shadow-lift) sm:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)]"
               >
                 <div className="min-h-72 overflow-hidden bg-muted sm:min-h-full">
-                  <img src={POSTERS[event.slug]?.src} alt={POSTERS[event.slug]?.alt ?? event.posterAlt} className="h-full w-full object-cover object-top" />
+                  <img src={event.posterUrl} alt={event.posterAlt} className="h-full w-full object-cover object-top" />
                 </div>
                 <div className="flex min-w-0 flex-1 flex-col p-6 md:p-7">
                   <p className="flex items-center gap-2 text-sm font-bold uppercase text-ochre">
