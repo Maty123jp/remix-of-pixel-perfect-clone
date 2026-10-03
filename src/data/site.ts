@@ -95,25 +95,25 @@ export const LEADERS: Person[] = [
   {
     name: "Bc. Eliška Pospíšilová",
     origin: "Horní Hradiště",
-    photoUrl: "/__l5e/assets-v1/d84b3438-0496-454b-b90e-e84ac3e29d23/eliska-pospisilova.png",
+    photoUrl: "/images/eliska-pospisilova.png",
     bio: "Eliška pochází z Horního Hradiště a pracuje v oblasti sociálních dávek. Při své práci se setkává také se seniory, kteří potřebují pomoc nebo radu. Chce pro ně podporovat nejen praktickou pomoc, ale i příležitosti k setkávání a společným zážitkům.",
   },
   {
     name: "Bc. Lucie Helusová",
     origin: "Plasy",
-    photoUrl: "/__l5e/assets-v1/aca96c61-0634-4686-a0b8-bcf93cdc5f4f/lucie-helusova.png",
+    photoUrl: "/images/lucie-helusova.png",
     bio: "Lucie žije se svou rodinou v Plasích. Záleží jí na tom, aby zde senioři žili bezpečně, aktivně a důstojně a aby se přirozeně potkávaly různé generace. Do společné práce přináší zkušenost s organizací, spoluprací a hledáním praktických řešení.",
   },
   {
     name: "Květoslava Švajdlenková",
     origin: "Horní Hradiště",
-    photoUrl: "/__l5e/assets-v1/4f78bbf2-b192-4533-9bd9-10728ede418a/kvetoslava-svajdlenkova.png",
+    photoUrl: "/images/kvetoslava-svajdlenkova.png",
     bio: "Květoslava pochází z Horního Hradiště a pracuje jako vychovatelka. Má ráda práci s lidmi a věří, že přibývající roky nemusejí znamenat ústup ze společenského života. Ráda by podporovala setkání, výlety a další aktivity, ze kterých si lidé odnesou příjemný zážitek.",
   },
   {
     name: "Lucie Halilovová",
     origin: "Plasy",
-    photoUrl: "/__l5e/assets-v1/28764af1-44b9-4db6-a688-e08c5fabb411/lucie-halilovova.png",
+    photoUrl: "/images/lucie-halilovova.png",
     bio: "Lucie žije od dětství v Plasích a sport je dlouhodobou součástí jejího života. Chtěla by, aby město nabízelo více možností ke společnému setkávání a aktivnímu trávení času. Záleží jí také na tom, aby Plasy více naslouchaly názorům seniorů.",
   },
 ];

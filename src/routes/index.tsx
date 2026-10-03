@@ -2,9 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Users, HandHeart, Trees, Megaphone, ArrowRight, CalendarDays } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SITE, upcomingEvents } from "@/data/site";
-import heroAsset from "@/assets/uvodni-fotografie.jpg.asset.json";
-import schoolPosterAsset from "@/assets/prohlidka-skoly.png.asset.json";
-import sumavaPosterAsset from "@/assets/dostupna-sumava.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -53,11 +50,11 @@ const AREAS = [
 
 const POSTERS: Record<string, { src: string; alt: string }> = {
   "den-otevrenych-dveri-zs-plasy": {
-    src: schoolPosterAsset.url,
+    src: "/images/prohlidka-skoly.png",
     alt: "Plakát prohlídky nových prostor Základní školy Plasy",
   },
   "dostupna-sumava": {
-    src: sumavaPosterAsset.url,
+    src: "/images/dostupna-sumava.png",
     alt: "Plakát zájezdu Dostupná Šumava",
   },
 };
@@ -90,7 +87,7 @@ function Index() {
           </div>
           <div className="relative order-first md:order-none">
             <div aria-hidden className="absolute -bottom-4 -left-4 h-full w-full rounded-lg bg-ochre" />
-            <img src={heroAsset.url} alt="Senioři společně hledí na klášter v Plasích" className="relative aspect-4/3 w-full rounded-lg object-cover shadow-(--shadow-lift)" />
+            <img src="/images/uvodni-fotografie.jpg" alt="Senioři společně hledí na klášter v Plasích" className="relative aspect-4/3 w-full rounded-lg object-cover shadow-(--shadow-lift)" />
           </div>
         </div>
       </section>
