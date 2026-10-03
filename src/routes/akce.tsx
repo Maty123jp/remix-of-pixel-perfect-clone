@@ -96,9 +96,9 @@ function Events() {
                   <p className="mt-4 rounded-xl bg-accent p-5 text-base font-semibold text-primary">
                     {event.signup}
                   </p>
-                  {event.pendingDetails && (
+                  {event.details && (
                     <ul className="mt-4 space-y-1 text-base text-muted-foreground">
-                      {event.pendingDetails.map((d) => (
+                      {event.details.map((d) => (
                         <li key={d}>{d}</li>
                       ))}
                     </ul>

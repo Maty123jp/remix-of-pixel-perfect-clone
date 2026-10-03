@@ -32,8 +32,8 @@ export type Event = {
   signup: string;
   posterUrl?: string;
   posterAlt: string;
-  /** Doplníme, až budou známé (cena, hodiny odjezdu a návratu). */
-  pendingDetails?: string[];
+  /** Praktické údaje k akci (cena, hodiny odjezdu a návratu). */
+  details?: string[];
 };
 
 export const EVENTS: Event[] = [
@@ -57,7 +57,7 @@ export const EVENTS: Event[] = [
   {
     slug: "dostupna-sumava",
     title: "Dostupná Šumava",
-    date: "2026-10-07T08:00:00+02:00",
+    date: "2026-10-07T05:15:00+02:00",
     dateLabel: "7. října 2026",
     place: "odjezd z Plas",
     shortDescription:
@@ -69,7 +69,11 @@ export const EVENTS: Event[] = [
       "Počet míst je omezený. Přihlaste se do 29. září 2026 na ViceProSeniory@seznam.cz nebo SMS na číslo 607 280 428.",
     posterUrl: "/images/dostupna-sumava.png",
     posterAlt: "Plakát zájezdu Dostupná Šumava",
-    pendingDetails: ["Cena: bude doplněna", "Hodina odjezdu a návratu: bude doplněna"],
+    details: [
+      "Cena: 700 Kč na osobu za dopravu + výdaje na vstupy (není nutné se jich účastnit)",
+      "Odjezd z Plas: 5:15",
+      "Návrat: 19:00",
+    ],
   },
 ];
 
