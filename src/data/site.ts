@@ -40,9 +40,9 @@ export const EVENTS: Event[] = [
   {
     slug: "den-otevrenych-dveri-zs-plasy",
     title: "Den otevřených dveří – Základní škola Plasy, nová nástavba",
-    date: "2026-10-05T16:00:00+02:00",
+    date: "2026-10-05T16:30:00+02:00",
     dateLabel: "5. října 2026",
-    timeLabel: "od 16:00",
+    timeLabel: "od 16:30",
     place: "Základní škola Plasy",
     shortDescription:
       "Prohlídka nových prostor školy, beseda a prostor pro vaše dotazy. Počet míst je omezený; je potřeba se předem přihlásit.",
