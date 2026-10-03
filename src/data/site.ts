@@ -18,7 +18,7 @@ export const NAV = [
 
 /**
  * Jediný zdroj dat o akcích. Zde stačí upravit nebo přidat akci.
- * `date` = datum akce (ISO), `posterUrl` = adresa plakátu (zatím nedodán).
+ * `date` = datum akce (ISO), `posterUrl` = adresa plakátu ve složce public/images.
  */
 export type Event = {
   slug: string;
@@ -51,8 +51,8 @@ export const EVENTS: Event[] = [
     ],
     signup:
       "Počet míst je omezený, proto je potřeba se předem přihlásit. Napište na ViceProSeniory@seznam.cz nebo pošlete SMS na číslo 607 280 428.",
-    posterAlt:
-      "Plakát akce Den otevřených dveří v Základní škole Plasy – místo pro dodaný plakát",
+    posterUrl: "/images/prohlidka-skoly.png",
+    posterAlt: "Plakát prohlídky nových prostor Základní školy Plasy",
   },
   {
     slug: "dostupna-sumava",
@@ -67,7 +67,8 @@ export const EVENTS: Event[] = [
     ],
     signup:
       "Počet míst je omezený. Přihlaste se do 29. září 2026 na ViceProSeniory@seznam.cz nebo SMS na číslo 607 280 428.",
-    posterAlt: "Plakát zájezdu Dostupná Šumava – místo pro dodaný plakát",
+    posterUrl: "/images/dostupna-sumava.png",
+    posterAlt: "Plakát zájezdu Dostupná Šumava",
     pendingDetails: ["Cena: bude doplněna", "Hodina odjezdu a návratu: bude doplněna"],
   },
 ];

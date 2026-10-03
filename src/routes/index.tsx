@@ -48,17 +48,6 @@ const AREAS = [
   },
 ];
 
-const POSTERS: Record<string, { src: string; alt: string }> = {
-  "den-otevrenych-dveri-zs-plasy": {
-    src: "/images/prohlidka-skoly.png",
-    alt: "Plakát prohlídky nových prostor Základní školy Plasy",
-  },
-  "dostupna-sumava": {
-    src: "/images/dostupna-sumava.png",
-    alt: "Plakát zájezdu Dostupná Šumava",
-  },
-};
-
 function Index() {
   const next = upcomingEvents().slice(0, 2);
 
@@ -137,7 +126,7 @@ function Index() {
                 className="grid overflow-hidden rounded-lg bg-card text-card-foreground shadow-(--shadow-lift) sm:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)]"
               >
                 <div className="min-h-72 overflow-hidden bg-muted sm:min-h-full">
-                  <img src={POSTERS[event.slug]?.src} alt={POSTERS[event.slug]?.alt ?? event.posterAlt} className="h-full w-full object-cover object-top" />
+                  <img src={event.posterUrl} alt={event.posterAlt} className="h-full w-full object-cover object-top" />
                 </div>
                 <div className="flex min-w-0 flex-1 flex-col p-6 md:p-7">
                   <p className="flex items-center gap-2 text-sm font-bold uppercase text-ochre">
